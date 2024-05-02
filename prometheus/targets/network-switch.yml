@@ -1,0 +1,21 @@
+# Prometheus 通过文件发现机制定义的采集目标
+# - labels:
+    # generator.yml 中定义的指标模块名称 如果有多个可以写多个模块名
+    # module: huawei_common,huawei_core
+    # generator.yml 中定义的认证模块名
+    # auth: public_v2
+    # 自定义的标签 可删除
+    # brand: Huawei
+    # 自定义的标签 可删除
+    # model: S12700E-4
+  # targets:
+    # target 这里指网络设备管理IP
+    # - 192.168.1.1
+
+- labels:
+    module: huawei_acc
+    auth: auth_huawei
+    brand: Huawei
+    model: S5720-36C-EI-AC
+  targets:
+    - 192.168.190.250

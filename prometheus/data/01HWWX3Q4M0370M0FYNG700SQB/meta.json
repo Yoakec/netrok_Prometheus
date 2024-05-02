@@ -1,0 +1,17 @@
+{
+	"ulid": "01HWWX3Q4M0370M0FYNG700SQB",
+	"minTime": 1714651205121,
+	"maxTime": 1714658400000,
+	"stats": {
+		"numSamples": 374564,
+		"numSeries": 927,
+		"numChunks": 2587
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HWWX3Q4M0370M0FYNG700SQB"
+		]
+	},
+	"version": 1
+}
