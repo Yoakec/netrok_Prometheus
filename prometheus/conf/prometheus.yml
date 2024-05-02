@@ -14,7 +14,7 @@ alerting:
 
 # 按照设定参数进行扫描加载 用于自定义报警规则 其报警媒介和route路由由alertmanager插件实现
 rule_files:
-  - "/prometheus/rules/*.yml"
+  - "/opt/prometheus/rules/*.yml"
 
 # 设定采集对 这里既有静态设置也有设置动态服务发现（服务发现用于后续target更改只需要进行规则修改即可，不需要进Prometheus守护进程重启）
 scrape_configs:

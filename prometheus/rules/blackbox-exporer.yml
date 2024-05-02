@@ -1,0 +1,12 @@
+groups:
+  - name: blackbox.rules
+    rules:
+      - alert: blackbox_network_stats
+        expr: probe_success == 0
+        for: 1m
+        labels:
+          team: ops
+          severity: critical
+        annotations:
+          description: "接口/主机/路径/端口：{{ $labels.instance }} 无法连通"
+
