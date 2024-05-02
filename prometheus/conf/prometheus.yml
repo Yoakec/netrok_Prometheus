@@ -1,0 +1,47 @@
+# 全局配置文件
+global:
+  scrape_interval: 15s      # 设置数据采集间隔每次15s 默认1分钟
+  evaluation_interval: 15s  # 用来控制评估规则的频率，prometheus 使用规则产生新的时间序列数据或者产生警报
+  scrape_timeout: 10s       # 采集超时 默认10s
+  external_labels:          # 外部标签 后续展开说明外部标签的使用场景
+
+# 告警插件配置
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - 192.168.190.129:9093  # AlerManager服务IP+端口
+
+# 按照设定参数进行扫描加载 用于自定义报警规则 其报警媒介和route路由由alertmanager插件实现
+rule_files:
+  - "/prometheus/rules/*.yml"
+
+# 设定采集对 这里既有静态设置也有设置动态服务发现（服务发现用于后续target更改只需要进行规则修改即可，不需要进Prometheus守护进程重启）
+scrape_configs:
+  - job_name: "prometheus"
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      - targets: ["192.168.190.129:9090"]   # Prometheus服务IP+端口
+  - job_name: 'blackbox_http_ping'
+    scrape_interval: 30s
+    metrics_path: /probe
+    params:
+      module: [icmp]
+    static_configs:
+      - targets:
+          - 127.0.0.1
+          - 47.104.38.82
+          - 59.110.190.69
+          - 47.92.17.36
+          - 39.104.9.1
+          - 118.31.219.247
+          - 106.14.228.194
+          - 120.77.166.226
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 127.0.0.1:9098 # blackbox-exporter 服务所在的机器和端口

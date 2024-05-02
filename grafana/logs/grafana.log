@@ -1,0 +1,161 @@
+logger=cleanup t=2024-05-02T00:07:52.112180933+08:00 level=info msg="Completed cleanup jobs" duration=6.07195ms
+logger=plugins.update.checker t=2024-05-02T00:07:53.3506197+08:00 level=info msg="Update check succeeded" duration=379.037372ms
+logger=server t=2024-05-02T00:12:59.78033646+08:00 level=info msg="Shutdown started" reason="System signal: terminated"
+logger=tracing t=2024-05-02T00:12:59.780907625+08:00 level=info msg="Closing tracing"
+logger=ticker t=2024-05-02T00:12:59.781230847+08:00 level=info msg=stopped last_tick=2024-05-02T00:12:50+08:00
+logger=grafana-apiserver t=2024-05-02T00:12:59.781573794+08:00 level=info msg="StorageObjectCountTracker pruner is exiting"
+logger=settings t=2024-05-02T11:31:30.331775846+08:00 level=info msg="Starting Grafana" version=10.4.1 commit=d3ce857c0eb86f571ffa993a9cd8493b6f47b630 branch=HEAD compiled=2024-05-02T11:31:30+08:00
+logger=settings t=2024-05-02T11:31:30.332511589+08:00 level=info msg="Config loaded from" file=/opt/grafana/conf/defaults.ini
+logger=settings t=2024-05-02T11:31:30.332531109+08:00 level=info msg="Config loaded from" file=/opt/grafana/conf/defaults.ini
+logger=settings t=2024-05-02T11:31:30.332535189+08:00 level=info msg=Target target=[all]
+logger=settings t=2024-05-02T11:31:30.332542119+08:00 level=info msg="Path Home" path=/opt/grafana
+logger=settings t=2024-05-02T11:31:30.332545389+08:00 level=info msg="Path Data" path=/opt/grafana/data
+logger=settings t=2024-05-02T11:31:30.332548439+08:00 level=info msg="Path Logs" path=/opt/grafana/logs
+logger=settings t=2024-05-02T11:31:30.332551309+08:00 level=info msg="Path Plugins" path=/opt/grafana/plugins
+logger=settings t=2024-05-02T11:31:30.332554169+08:00 level=info msg="Path Provisioning" path=/opt/grafana/provisioning
+logger=settings t=2024-05-02T11:31:30.332557579+08:00 level=info msg="App mode production"
+logger=sqlstore t=2024-05-02T11:31:30.333801114+08:00 level=info msg="Connecting to DB" dbtype=sqlite3
+logger=migrator t=2024-05-02T11:31:30.336618139+08:00 level=info msg="Starting DB migrations"
+logger=migrator t=2024-05-02T11:31:30.369450163+08:00 level=info msg="migrations completed" performed=0 skipped=548 duration=258.947µs
+logger=secrets t=2024-05-02T11:31:30.371524948+08:00 level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=plugin.store t=2024-05-02T11:31:30.3846135+08:00 level=info msg="Loading plugins..."
+logger=local.finder t=2024-05-02T11:31:30.46333622+08:00 level=warn msg="Skipping finding plugins as directory does not exist" path=/opt/grafana/plugins-bundled
+logger=plugin.store t=2024-05-02T11:31:30.46338059+08:00 level=info msg="Plugins loaded" count=55 duration=78.76711ms
+logger=query_data t=2024-05-02T11:31:30.470845863+08:00 level=info msg="Query Service initialization"
+logger=live.push_http t=2024-05-02T11:31:30.48560806+08:00 level=info msg="Live Push Gateway initialization"
+logger=ngalert.migration t=2024-05-02T11:31:30.487366204+08:00 level=info msg=Starting
+logger=ngalert.state.manager t=2024-05-02T11:31:30.497962408+08:00 level=info msg="Running in alternative execution of Error/NoData mode"
+logger=infra.usagestats.collector t=2024-05-02T11:31:30.505053934+08:00 level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=server t=2024-05-02T11:31:30.505183253+08:00 level=info msg="Writing PID file" path=/opt/grafana/grafana-server.pid pid=1038
+logger=provisioning.datasources t=2024-05-02T11:31:30.508323275+08:00 level=error msg="can't read datasource provisioning files from directory" path=/opt/grafana/provisioning/datasources error="open /opt/grafana/provisioning/datasources: no such file or directory"
+logger=provisioning.plugins t=2024-05-02T11:31:30.508371285+08:00 level=error msg="Failed to read plugin provisioning files from directory" path=/opt/grafana/provisioning/plugins error="open /opt/grafana/provisioning/plugins: no such file or directory"
+logger=provisioning.notifiers t=2024-05-02T11:31:30.508420204+08:00 level=error msg="Can't read alert notification provisioning files from directory" path=/opt/grafana/provisioning/notifiers error="open /opt/grafana/provisioning/notifiers: no such file or directory"
+logger=provisioning.alerting t=2024-05-02T11:31:30.508467624+08:00 level=error msg="can't read alerting provisioning files from directory" path=/opt/grafana/provisioning/alerting error="open /opt/grafana/provisioning/alerting: no such file or directory"
+logger=provisioning.alerting t=2024-05-02T11:31:30.508473314+08:00 level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2024-05-02T11:31:30.508483934+08:00 level=info msg="finished to provision alerting"
+logger=ngalert.state.manager t=2024-05-02T11:31:30.509520281+08:00 level=info msg="Warming state cache for startup"
+logger=grafanaStorageLogger t=2024-05-02T11:31:30.51041199+08:00 level=info msg="Storage starting"
+logger=provisioning.dashboard t=2024-05-02T11:31:30.510864942+08:00 level=error msg="can't read dashboard provisioning files from directory" path=/opt/grafana/provisioning/dashboards error="open /opt/grafana/provisioning/dashboards: no such file or directory"
+logger=ngalert.multiorg.alertmanager t=2024-05-02T11:31:30.514764616+08:00 level=info msg="Starting MultiOrg Alertmanager"
+logger=http.server t=2024-05-02T11:31:30.514830503+08:00 level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+logger=ngalert.state.manager t=2024-05-02T11:31:30.542770725+08:00 level=info msg="State cache has been initialized" states=8 duration=33.249104ms
+logger=ngalert.scheduler t=2024-05-02T11:31:30.542866594+08:00 level=info msg="Starting scheduler" tickInterval=10s maxAttempts=1
+logger=ticker t=2024-05-02T11:31:30.543816192+08:00 level=info msg=starting first_tick=2024-05-02T11:31:40+08:00
+logger=provisioning.dashboard t=2024-05-02T11:31:30.574635557+08:00 level=info msg="starting to provision dashboards"
+logger=provisioning.dashboard t=2024-05-02T11:31:30.575035324+08:00 level=info msg="finished to provision dashboards"
+logger=grafana-apiserver t=2024-05-02T11:31:30.639011847+08:00 level=info msg="Adding GroupVersion playlist.grafana.app v0alpha1 to ResourceManager"
+logger=grafana-apiserver t=2024-05-02T11:31:30.639336064+08:00 level=info msg="Adding GroupVersion featuretoggle.grafana.app v0alpha1 to ResourceManager"
+logger=plugins.update.checker t=2024-05-02T11:31:30.908678688+08:00 level=info msg="Update check succeeded" duration=392.264366ms
+logger=grafana.update.checker t=2024-05-02T11:31:31.363320895+08:00 level=info msg="Update check succeeded" duration=852.304194ms
+logger=ngalert.state.manager rule_uid=edkelagormi2oa org_id=1 t=2024-05-02T11:31:50.010604694+08:00 level=info msg="Detected stale state entry" cacheID="[[\"__alert_rule_namespace_uid__\",\"fdkeknawq9c74d\"],[\"__alert_rule_uid__\",\"edkelagormi2oa\"],[\"__name__\",\"probe_duration_seconds\"],[\"alertname\",\"ICMP packet loss\"],[\"grafana_folder\",\"ICMP_Alert\"],[\"instance\",\"120.77.166.226\"],[\"job\",\"blackbox_http_ping\"]]" state=Normal reason=
+logger=ngalert.state.manager rule_uid=edkelagormi2oa org_id=1 t=2024-05-02T11:31:50.010646443+08:00 level=info msg="Detected stale state entry" cacheID="[[\"__alert_rule_namespace_uid__\",\"fdkeknawq9c74d\"],[\"__alert_rule_uid__\",\"edkelagormi2oa\"],[\"__name__\",\"probe_duration_seconds\"],[\"alertname\",\"ICMP packet loss\"],[\"grafana_folder\",\"ICMP_Alert\"],[\"instance\",\"127.0.0.1\"],[\"job\",\"blackbox_http_ping\"]]" state=Normal reason=
+logger=ngalert.state.manager rule_uid=edkelagormi2oa org_id=1 t=2024-05-02T11:31:50.010651973+08:00 level=info msg="Detected stale state entry" cacheID="[[\"__alert_rule_namespace_uid__\",\"fdkeknawq9c74d\"],[\"__alert_rule_uid__\",\"edkelagormi2oa\"],[\"__name__\",\"probe_duration_seconds\"],[\"alertname\",\"ICMP packet loss\"],[\"grafana_folder\",\"ICMP_Alert\"],[\"instance\",\"47.104.38.82\"],[\"job\",\"blackbox_http_ping\"]]" state=Normal reason=
+logger=ngalert.state.manager rule_uid=edkelagormi2oa org_id=1 t=2024-05-02T11:31:50.010656993+08:00 level=info msg="Detected stale state entry" cacheID="[[\"__alert_rule_namespace_uid__\",\"fdkeknawq9c74d\"],[\"__alert_rule_uid__\",\"edkelagormi2oa\"],[\"__name__\",\"probe_duration_seconds\"],[\"alertname\",\"ICMP packet loss\"],[\"grafana_folder\",\"ICMP_Alert\"],[\"instance\",\"47.92.17.36\"],[\"job\",\"blackbox_http_ping\"]]" state=Normal reason=
+logger=ngalert.state.manager rule_uid=edkelagormi2oa org_id=1 t=2024-05-02T11:31:50.010665963+08:00 level=info msg="Detected stale state entry" cacheID="[[\"__alert_rule_namespace_uid__\",\"fdkeknawq9c74d\"],[\"__alert_rule_uid__\",\"edkelagormi2oa\"],[\"__name__\",\"probe_duration_seconds\"],[\"alertname\",\"ICMP packet loss\"],[\"grafana_folder\",\"ICMP_Alert\"],[\"instance\",\"106.14.228.194\"],[\"job\",\"blackbox_http_ping\"]]" state=Normal reason=
+logger=infra.usagestats t=2024-05-02T11:33:22.518801995+08:00 level=info msg="Usage stats are ready to report"
+logger=context userId=0 orgId=0 uname= t=2024-05-02T11:33:59.468899677+08:00 level=info msg="Request Completed" method=GET path=/d/oe-msimGz/icmp-exporter status=302 remote_addr=192.168.190.1 time_ms=0 duration=937.527µs size=47 referer= handler=/d/:uid/:slug status_source=server
+logger=context userId=0 orgId=0 uname= t=2024-05-02T11:33:59.62239467+08:00 level=info msg="Request Completed" method=GET path=/user/auth-tokens/rotate status=302 remote_addr=192.168.190.1 time_ms=2 duration=2.953347ms size=99 referer= handler=/user/auth-tokens/rotate status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T11:34:00.168677301+08:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=192.168.190.1 time_ms=1 duration=1.274378ms size=0 referer= handler=/api/live/ws status_source=server
+logger=live t=2024-05-02T11:34:00.383800237+08:00 level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/oe-msimGz address=grafana/dashboard/uid/oe-msimGz
+logger=cleanup t=2024-05-02T11:41:30.511872458+08:00 level=info msg="Completed cleanup jobs" duration=1.963364ms
+logger=plugins.update.checker t=2024-05-02T11:41:31.28067058+08:00 level=info msg="Update check succeeded" duration=371.887871ms
+logger=cleanup t=2024-05-02T11:51:30.513469483+08:00 level=info msg="Completed cleanup jobs" duration=3.463016ms
+logger=plugins.update.checker t=2024-05-02T11:51:31.529714351+08:00 level=info msg="Update check succeeded" duration=619.592076ms
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T11:51:52.498002268+08:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=192.168.190.1 time_ms=1 duration=1.313696ms size=0 referer= handler=/api/live/ws status_source=server
+logger=cleanup t=2024-05-02T12:01:30.514237601+08:00 level=info msg="Completed cleanup jobs" duration=2.980862ms
+logger=plugins.update.checker t=2024-05-02T12:01:31.759429311+08:00 level=info msg="Update check succeeded" duration=849.331153ms
+logger=infra.usagestats t=2024-05-02T12:03:22.521791535+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T12:11:30.512875763+08:00 level=info msg="Completed cleanup jobs" duration=2.978835ms
+logger=plugins.update.checker t=2024-05-02T12:11:31.303317047+08:00 level=info msg="Update check succeeded" duration=393.579977ms
+logger=cleanup t=2024-05-02T12:21:30.519802329+08:00 level=info msg="Completed cleanup jobs" duration=8.522954ms
+logger=plugins.update.checker t=2024-05-02T12:21:31.891878253+08:00 level=info msg="Update check succeeded" duration=981.729509ms
+logger=cleanup t=2024-05-02T12:31:30.519339567+08:00 level=info msg="Completed cleanup jobs" duration=8.480079ms
+logger=plugins.update.checker t=2024-05-02T12:31:31.283990684+08:00 level=info msg="Update check succeeded" duration=374.307961ms
+logger=infra.usagestats t=2024-05-02T12:33:22.522248038+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T12:41:30.514027497+08:00 level=info msg="Completed cleanup jobs" duration=3.973935ms
+logger=plugins.update.checker t=2024-05-02T12:41:31.651210635+08:00 level=info msg="Update check succeeded" duration=741.271123ms
+logger=cleanup t=2024-05-02T12:51:30.51633269+08:00 level=info msg="Completed cleanup jobs" duration=5.172529ms
+logger=plugins.update.checker t=2024-05-02T12:51:31.771011212+08:00 level=info msg="Update check succeeded" duration=861.007565ms
+logger=cleanup t=2024-05-02T13:01:30.516218054+08:00 level=info msg="Completed cleanup jobs" duration=5.19435ms
+logger=plugins.update.checker t=2024-05-02T13:01:31.64460536+08:00 level=info msg="Update check succeeded" duration=735.754228ms
+logger=infra.usagestats t=2024-05-02T13:03:22.521957463+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T13:11:30.513125662+08:00 level=info msg="Completed cleanup jobs" duration=3.051613ms
+logger=plugins.update.checker t=2024-05-02T13:11:31.778243454+08:00 level=info msg="Update check succeeded" duration=868.350917ms
+logger=cleanup t=2024-05-02T13:21:30.513561318+08:00 level=info msg="Completed cleanup jobs" duration=2.907365ms
+logger=plugins.update.checker t=2024-05-02T13:21:31.299998906+08:00 level=info msg="Update check succeeded" duration=389.944484ms
+logger=cleanup t=2024-05-02T13:31:30.512412905+08:00 level=info msg="Completed cleanup jobs" duration=1.798274ms
+logger=plugins.update.checker t=2024-05-02T13:31:31.281381931+08:00 level=info msg="Update check succeeded" duration=371.722501ms
+logger=infra.usagestats t=2024-05-02T13:33:22.521182019+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T13:41:30.511672098+08:00 level=info msg="Completed cleanup jobs" duration=1.733224ms
+logger=plugins.update.checker t=2024-05-02T13:41:31.731726077+08:00 level=info msg="Update check succeeded" duration=822.949291ms
+logger=cleanup t=2024-05-02T13:51:30.514046766+08:00 level=info msg="Completed cleanup jobs" duration=2.934264ms
+logger=plugins.update.checker t=2024-05-02T13:51:31.297333578+08:00 level=info msg="Update check succeeded" duration=388.336677ms
+logger=cleanup t=2024-05-02T14:01:30.514152067+08:00 level=info msg="Completed cleanup jobs" duration=3.205798ms
+logger=plugins.update.checker t=2024-05-02T14:01:31.638277406+08:00 level=info msg="Update check succeeded" duration=728.516587ms
+logger=infra.usagestats t=2024-05-02T14:03:22.521088274+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T14:11:30.513862622+08:00 level=info msg="Completed cleanup jobs" duration=2.867335ms
+logger=plugins.update.checker t=2024-05-02T14:11:31.645430331+08:00 level=info msg="Update check succeeded" duration=736.525059ms
+logger=cleanup t=2024-05-02T14:21:30.519787882+08:00 level=info msg="Completed cleanup jobs" duration=8.561746ms
+logger=plugins.update.checker t=2024-05-02T14:21:31.75892253+08:00 level=info msg="Update check succeeded" duration=849.787267ms
+logger=cleanup t=2024-05-02T14:31:30.525176379+08:00 level=info msg="Completed cleanup jobs" duration=14.119295ms
+logger=plugins.update.checker t=2024-05-02T14:31:31.664013073+08:00 level=info msg="Update check succeeded" duration=754.183444ms
+logger=infra.usagestats t=2024-05-02T14:33:22.52220153+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T14:41:30.517590491+08:00 level=info msg="Completed cleanup jobs" duration=6.382447ms
+logger=plugins.update.checker t=2024-05-02T14:41:31.671556192+08:00 level=info msg="Update check succeeded" duration=762.04709ms
+logger=cleanup t=2024-05-02T14:51:30.514640782+08:00 level=info msg="Completed cleanup jobs" duration=3.499601ms
+logger=plugins.update.checker t=2024-05-02T14:51:31.770445822+08:00 level=info msg="Update check succeeded" duration=861.43172ms
+logger=cleanup t=2024-05-02T15:01:30.517506834+08:00 level=info msg="Completed cleanup jobs" duration=6.385149ms
+logger=plugins.update.checker t=2024-05-02T15:01:31.288112195+08:00 level=info msg="Update check succeeded" duration=378.14078ms
+logger=infra.usagestats t=2024-05-02T15:03:22.521470825+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T15:11:30.514069417+08:00 level=info msg="Completed cleanup jobs" duration=2.870037ms
+logger=plugins.update.checker t=2024-05-02T15:11:31.972388404+08:00 level=info msg="Update check succeeded" duration=1.062343775s
+logger=cleanup t=2024-05-02T15:21:30.516729043+08:00 level=info msg="Completed cleanup jobs" duration=5.642352ms
+logger=plugins.update.checker t=2024-05-02T15:21:31.946823477+08:00 level=info msg="Update check succeeded" duration=1.03686515s
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:23:43.258533994+08:00 level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=192.168.190.1 time_ms=0 duration=981.438µs size=0 referer= handler=/api/live/ws status_source=server
+logger=cleanup t=2024-05-02T15:31:30.520308154+08:00 level=info msg="Completed cleanup jobs" duration=9.2039ms
+logger=plugins.update.checker t=2024-05-02T15:31:31.286898362+08:00 level=info msg="Update check succeeded" duration=378.134976ms
+logger=infra.usagestats t=2024-05-02T15:33:22.521437858+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T15:41:30.513775602+08:00 level=info msg="Completed cleanup jobs" duration=2.622597ms
+logger=plugins.update.checker t=2024-05-02T15:41:31.29420315+08:00 level=info msg="Update check succeeded" duration=384.188322ms
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:49:54.82138744+08:00 level=error msg="Dashboard not found" error="Dashboard not found" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:49:54.821470429+08:00 level=info msg="Request Completed" method=GET path=/api/dashboards/uid/Sj56fJUnz status=404 remote_addr=192.168.190.1 time_ms=2 duration=2.395844ms size=46 referer=http://192.168.190.129:3000/dashboard/import handler=/api/dashboards/uid/:uid status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:49:54.82422881+08:00 level=error msg="Dashboard not found" error="Dashboard not found" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:49:54.8242862+08:00 level=info msg="Request Completed" method=GET path=/api/dashboards/uid/Sj56fJUnz status=404 remote_addr=192.168.190.1 time_ms=0 duration=512.856µs size=46 referer=http://192.168.190.129:3000/dashboard/import handler=/api/dashboards/uid/:uid status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:50:06.816937745+08:00 level=error msg="Dashboard not found" error="Dashboard not found" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:50:06.816988045+08:00 level=info msg="Request Completed" method=GET path=/api/dashboards/uid/Sj56fJUnz status=404 remote_addr=192.168.190.1 time_ms=0 duration=514.466µs size=46 referer=http://192.168.190.129:3000/dashboard/import handler=/api/dashboards/uid/:uid status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:50:06.823783596+08:00 level=error msg="Dashboard not found" error="Dashboard not found" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:50:06.823868635+08:00 level=info msg="Request Completed" method=GET path=/api/dashboards/uid/Sj56fJUnz status=404 remote_addr=192.168.190.1 time_ms=0 duration=600.675µs size=46 referer=http://192.168.190.129:3000/dashboard/import handler=/api/dashboards/uid/:uid status_source=server
+logger=live t=2024-05-02T15:50:06.933235043+08:00 level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/Sj56fJUnz address=grafana/dashboard/uid/Sj56fJUnz
+logger=cleanup t=2024-05-02T15:51:30.513070309+08:00 level=info msg="Completed cleanup jobs" duration=3.146136ms
+logger=plugins.update.checker t=2024-05-02T15:51:31.296784116+08:00 level=info msg="Update check succeeded" duration=387.965773ms
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:27.418359816+08:00 level=error msg="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" error="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:27.418451405+08:00 level=info msg="Request Completed" method=POST path=/api/v1/eval status=400 remote_addr=192.168.190.1 time_ms=2 duration=2.948004ms size=115 referer=http://192.168.190.129:3000/ handler=/api/v1/eval status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:38.35270989+08:00 level=error msg="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" error="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:38.352820466+08:00 level=info msg="Request Completed" method=POST path=/api/v1/eval status=400 remote_addr=192.168.190.1 time_ms=2 duration=2.76668ms size=115 referer=http://192.168.190.129:3000/ handler=/api/v1/eval status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:43.206718498+08:00 level=error msg="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" error="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:43.206785197+08:00 level=info msg="Request Completed" method=POST path=/api/v1/eval status=400 remote_addr=192.168.190.1 time_ms=0 duration=727.933µs size=115 referer=http://192.168.190.129:3000/ handler=/api/v1/eval status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:44.141897862+08:00 level=error msg="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" error="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:44.141958941+08:00 level=info msg="Request Completed" method=POST path=/api/v1/eval status=400 remote_addr=192.168.190.1 time_ms=1 duration=1.304349ms size=115 referer=http://192.168.190.129:3000/ handler=/api/v1/eval status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:55.132192111+08:00 level=error msg="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" error="Failed to build evaluator for queries and expressions: unable to find dependent node 'A'" remote_addr=192.168.190.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:54:55.13224626+08:00 level=info msg="Request Completed" method=POST path=/api/v1/eval status=400 remote_addr=192.168.190.1 time_ms=2 duration=2.394015ms size=115 referer=http://192.168.190.129:3000/ handler=/api/v1/eval status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:57:57.619982051+08:00 level=info msg="Request Completed" method=GET path=/api/plugins/grafana-llm-app/settings status=404 remote_addr=192.168.190.1 time_ms=0 duration=617.9µs size=64 referer="http://192.168.190.129:3000/d/oe-msimGz/icmp-exporter?editPanel=8&orgId=1&refresh=5m" handler=/api/plugins/:pluginId/settings status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:57:57.620965687+08:00 level=info msg="Request Completed" method=GET path=/api/plugins/grafana-llm-app/settings status=404 remote_addr=192.168.190.1 time_ms=0 duration=378.806µs size=64 referer="http://192.168.190.129:3000/d/oe-msimGz/icmp-exporter?editPanel=8&orgId=1&refresh=5m" handler=/api/plugins/:pluginId/settings status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:58:07.759712017+08:00 level=info msg="Request Completed" method=GET path=/api/plugins/grafana-llm-app/settings status=404 remote_addr=192.168.190.1 time_ms=0 duration=563.705µs size=64 referer="http://192.168.190.129:3000/alerting/edkelagormi2oa/edit?returnTo=%2Falerting%2Fgrafana%2Fedkelagormi2oa%2Fview%3FreturnTo%3D" handler=/api/plugins/:pluginId/settings status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:58:07.760665909+08:00 level=info msg="Request Completed" method=GET path=/api/plugins/grafana-llm-app/settings status=404 remote_addr=192.168.190.1 time_ms=0 duration=324.497µs size=64 referer="http://192.168.190.129:3000/alerting/edkelagormi2oa/edit?returnTo=%2Falerting%2Fgrafana%2Fedkelagormi2oa%2Fview%3FreturnTo%3D" handler=/api/plugins/:pluginId/settings status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:58:38.864670017+08:00 level=info msg="Request Completed" method=GET path=/api/plugins/grafana-llm-app/settings status=404 remote_addr=192.168.190.1 time_ms=2 duration=2.238461ms size=64 referer=http://192.168.190.129:3000/ handler=/api/plugins/:pluginId/settings status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T15:58:38.867460814+08:00 level=info msg="Request Completed" method=GET path=/api/plugins/grafana-llm-app/settings status=404 remote_addr=192.168.190.1 time_ms=1 duration=1.813474ms size=64 referer=http://192.168.190.129:3000/ handler=/api/plugins/:pluginId/settings status_source=server
+logger=cleanup t=2024-05-02T16:01:30.518394078+08:00 level=info msg="Completed cleanup jobs" duration=7.192008ms
+logger=plugins.update.checker t=2024-05-02T16:01:31.296726195+08:00 level=info msg="Update check succeeded" duration=386.681006ms
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T16:03:21.476586023+08:00 level=info msg="Request Completed" method=GET path=/api/ruler/grafana/api/v1/rules/fdkeknawq9c74d/ICMP_Alert status=202 remote_addr=192.168.190.1 time_ms=3 duration=3.169822ms size=1742 referer=http://192.168.190.129:3000/ handler=/api/ruler/grafana/api/v1/rules/:Namespace/:Groupname status_source=server
+logger=context userId=1 orgId=1 uname=admin t=2024-05-02T16:03:21.548338667+08:00 level=info msg="Request Completed" method=POST path=/api/ruler/grafana/api/v1/rules/fdkeknawq9c74d status=202 remote_addr=192.168.190.1 time_ms=7 duration=7.118719ms size=103 referer=http://192.168.190.129:3000/ handler=/api/ruler/grafana/api/v1/rules/:Namespace status_source=server
+logger=infra.usagestats t=2024-05-02T16:03:22.520981365+08:00 level=info msg="Usage stats are ready to report"
+logger=ngalert.scheduler rule_uid=edkelagormi2oa org_id=1 t=2024-05-02T16:03:30.002228413+08:00 level=info msg="Rule's fingerprint has not changed. Skip resetting the state" currentFingerprint=b9835f286e5cd3b8
+logger=cleanup t=2024-05-02T16:11:30.517032121+08:00 level=info msg="Completed cleanup jobs" duration=7.102453ms
+logger=plugins.update.checker t=2024-05-02T16:11:31.797938538+08:00 level=info msg="Update check succeeded" duration=888.114417ms
+logger=cleanup t=2024-05-02T16:21:30.519750149+08:00 level=info msg="Completed cleanup jobs" duration=8.576775ms
+logger=plugins.update.checker t=2024-05-02T16:21:31.641716106+08:00 level=info msg="Update check succeeded" duration=732.663079ms
+logger=cleanup t=2024-05-02T16:31:30.514803523+08:00 level=info msg="Completed cleanup jobs" duration=3.734298ms
+logger=plugins.update.checker t=2024-05-02T16:31:31.290747716+08:00 level=info msg="Update check succeeded" duration=381.959458ms
+logger=infra.usagestats t=2024-05-02T16:33:22.522406647+08:00 level=info msg="Usage stats are ready to report"
+logger=cleanup t=2024-05-02T16:41:30.517006193+08:00 level=info msg="Completed cleanup jobs" duration=5.921633ms
+logger=plugins.update.checker t=2024-05-02T16:41:31.319113721+08:00 level=info msg="Update check succeeded" duration=409.161421ms
